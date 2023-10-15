@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="/css/kmbstopeta.css" rel="stylesheet" type="text/css" media="all" />
+    <script defer src="/js/kmbstopquery.min.js" type="text/javascript"></script>
+    <script defer src="/js/kmbstopeta.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <section id="dpip" class="dpip wrap-wide">
+    <div class="eta-mon">
+      <div class="monitor">
+        <div class="monitor-panel">
+          <div class="kmb-eta-screen">x
+            <div class="kmb-eta-data">
+              <div class="kmb-eta-header">分鐘min(s) &nbsp;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hof-creator-page wrap" id="select-routes">
+    <div class="title">
+      <h2>Select Routes</h2>
+      <hr>
+    </div>
+    <div class="hof-creator-page-column">
+      <div class="page-item">
+        <label>Search</label>
+        <br>
+        <input class="text-input" id="stop-search" type="text" autofocus>
+        <br>
+        <button id="query-filter" onclick="filterStops()">Search</button>
+        <button id="query-reset" onclick="printStops()">Show All</button>
+      </div>
+      <div class="page-item">
+        <label>Search Results</label>
+        <br>
+        <select id="stop-list" class="monospace" onchange="viewStop()">
+        </select>
+      </div>
+      <div class="page-item">
+        <label>Routes in Selected Stop</label>
+        <br>
+        <select id="stop-route-list" class="monospace">
+        </select>
+        <button id="route-add" onclick="addRoute()">Add</button>
+        <button id="route-addall" onclick="addAllRoute()">Add All</button>
+      </div>
+    </div>
+    <div class="hof-creator-page-column">
+      <div class="page-item">
+        <label>Added Routes</label>
+        <br>
+        <select id="eta-route-list" class="monospace width-full" size="12">
+        </select>
+        <br>
+        <button id="eta-route-del" onclick="etaDeleteRoute()">Delete Selected</button>
+        <button id="eta-update" onclick="updateRoutes()">Update ETA Screen</button>
+        <button id="eta-fullscreen" onclick="ETAFullScreen(0)">FullScreen</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
