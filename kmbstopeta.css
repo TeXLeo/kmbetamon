@@ -48,26 +48,6 @@
     height: 100%;
     font-family: Calibri, sans-serif;
 }
-.kmb-eta-logo-playground {
-    position: absolute;
-    width: calc(1436/1920*100%);
-    height: 100%;
-    background: rgb(33, 33, 33);
-    background: linear-gradient(0deg, rgba(33, 33, 33, 1) 0%, rgba(57, 57, 57, 1) 100%);
-}
-.kmb-eta-logo {
-    position: absolute;
-    width: 5em;
-    height: 5em;
-    z-index: 1;
-}
-.kmb-eta-video {
-    position: absolute;
-    left: 0;
-    width: calc(1436/1920*100%);
-    height: 100%;
-    background-color: #a7deda;
-}
 .kmb-eta-data {
     position: absolute;
     right: 0;
